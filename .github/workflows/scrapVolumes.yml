@@ -1,7 +1,7 @@
 name: "Scrap NFT volume"
 on:
   schedule:
-  - cron: "* */24 * * *"
+  - cron: "*/60 * * * *"
   workflow_dispatch: {}
 
 jobs:

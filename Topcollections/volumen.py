@@ -45,7 +45,7 @@ def saveSummaryJson():
 
 def saveElements(name_collection, _amount, _coin, _sales):
     amount = float(_amount)
-    sale = int(_sales)
+    sale = int(_sales.replace('K', '000').replace(',',''))
     if name_collection not in tokens:
         tokens.append(name_collection)
         data.append({"Collection name":name_collection, "volume": amount, "coin": _coin, "Sold Amount": sale})

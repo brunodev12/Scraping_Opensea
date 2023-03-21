@@ -6,14 +6,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import json
 
-#options = Options()
-#options.add_argument("--headless")
-#options.add_experimental_option("detach", True)
-#driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),chrome_options=options)
-
 user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/95.0.0.0"
 options = webdriver.ChromeOptions()
-options.headless = True
+options.add_argument('--headless=new')
 options.add_argument(f'user-agent={user_agent}')
 options.add_argument("--window-size=1920,1080")
 options.add_argument('--ignore-certificate-errors')
@@ -37,18 +32,30 @@ link3 = link2.find_element(By.XPATH, "//div[contains(@role, 'table')]")
 
 data = []
 tokens = []
+summary = []
 
-def saveJson():
-    with open("volumeCollections.json", "w") as jsonfile:
+def saveRawJson():
+    with open("results/RawNftSalesVolume.json", "w") as jsonfile:
         json.dump(data, jsonfile)
 
+def saveSummaryJson():
+    with open("results/nftSalesVolumeSummary.json", "w") as jsonfile:
+        json.dump(summary, jsonfile)
 
-def saveElements(name_collection, _amount, _coin):
+
+def saveElements(name_collection, _amount, _coin, _sales):
     amount = float(_amount)
+    sale = int(_sales)
     if name_collection not in tokens:
         tokens.append(name_collection)
-        data.append({"Collection name":name_collection, "volume": amount, "coin": _coin})
-        saveJson()
+        data.append({"Collection name":name_collection, "volume": amount, "coin": _coin, "Sold Amount": sale})
+        saveRawJson()
+
+def saveSummary(_summary):
+    summary.append(_summary)
+    if len(summary) > 24:
+        summary.pop(0)
+    saveSummaryJson()
 
 def getElements(): 
     time.sleep(1)
@@ -60,12 +67,12 @@ def getElements():
         sep_text = text.split('\n')
         name = sep_text[1]
         price = sep_text[2]
+        sales = sep_text[5]
         sep_price = price.split()
         amount = sep_price[0]
         coin = sep_price[1]
-        print(name)
-        print(amount, coin)
-        saveElements(name, amount, coin)
+        print(f"{name} has sold {sales} NFT, for a value of {amount} {coin}")
+        saveElements(name, amount, coin, sales)
 
 while(True):
     driver.execute_script("window.scrollBy(0, 750);")
@@ -82,10 +89,14 @@ while(True):
         break
 
 total_volume = 0
+total_sale_amount = 0
 for i in data:
     total_volume+=i['volume']
+    total_sale_amount+=i['Sold Amount']
 
-saveElements("Total Volume", total_volume, "ETH")
+saveSummary({"total_eth_vol": total_volume, "total_sales": total_sale_amount})
 
 print("=============Total Volume==============")
 print(total_volume)
+print("=============Total Sales==============")
+print(total_sale_amount)

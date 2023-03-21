@@ -34,6 +34,9 @@ data = []
 tokens = []
 summary = []
 
+with open("results/nftSalesVolumeSummary.json") as jsonfile:
+    summary = json.load(jsonfile)
+
 def saveRawJson():
     with open("results/RawNftSalesVolume.json", "w") as jsonfile:
         json.dump(data, jsonfile)

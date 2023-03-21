@@ -22,7 +22,7 @@ jobs:
       - name: Get current date
         id: date
         run: | 
-          echo "JOB_DATE=$(date +%Y%m%d%H)" >> $GITHUB_ENV
+          echo "JOB_DATE=$(date +'%Y-%m-%d %Hhs')" >> $GITHUB_ENV
           echo "## Getting job date and hour" >> $GITHUB_STEP_SUMMARY
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
 

@@ -1,2 +1,3 @@
 # Scraping_Opensea
-Este script sirve para obtener los últimos elementos publicados de una colección y guardarlos en un archivo .json
+
+Este script obtiene los volumenes de diferentes colecciones y los guarda en un archivo .json

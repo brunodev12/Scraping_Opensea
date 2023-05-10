@@ -8,10 +8,22 @@ jobs:
   scrap:
     runs-on: ubuntu-20.04
     permissions: write-all
-    container: bmogetta/volume_scrapper
+    #container: bmogetta/volume_scrapper
     steps:
       - name: "Check out the repo"
         uses: "actions/checkout@v3"
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'      
+
+      - name: Install requirements
+        run: |
+          pip install -r requirements.txt
+          echo "## Installed Requirements" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
 
       - name: execute py script # run volumen.py
         run: |

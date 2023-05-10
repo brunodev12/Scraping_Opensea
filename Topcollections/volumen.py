@@ -1,26 +1,22 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 import time
 import json
 
-user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/95.0.0.0"
-options = webdriver.ChromeOptions()
-options.add_argument('--headless=new')
-options.add_argument(f'user-agent={user_agent}')
-options.add_argument("--window-size=1920,1080")
+options = webdriver.FirefoxOptions()
+options.add_argument('--headless')  # Ejecución sin interfaz gráfica
+options.add_argument('user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0')
 options.add_argument('--ignore-certificate-errors')
 options.add_argument('--allow-running-insecure-content')
 options.add_argument("--disable-extensions")
+options.add_argument("disable-infobars")
 options.add_argument("--proxy-server='direct://'")
 options.add_argument("--proxy-bypass-list=*")
 options.add_argument("--start-maximized")
 options.add_argument('--disable-gpu')
 options.add_argument('--disable-dev-shm-usage')
 options.add_argument('--no-sandbox')
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+driver = webdriver.Firefox(executable_path='geckodriver', options=options)
 
 url = "https://opensea.io/rankings?sortBy=one_hour_volume"
 
@@ -33,6 +29,7 @@ link3 = link2.find_element(By.XPATH, "//div[contains(@role, 'table')]")
 data = []
 tokens = []
 summary = []
+
 
 with open("results/nftSalesVolumeSummary.json") as jsonfile:
     summary = json.load(jsonfile)

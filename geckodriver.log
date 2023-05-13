@@ -1865,3 +1865,28 @@ DevTools listening on ws://127.0.0.1:50301/devtools/browser/e86a61fe-b2e7-401c-a
 JavaScript warning: https://opensea.io/_next/static/chunks/main-ae31bbd290f75bdd.js, line 1: unreachable code after return statement
 ALSA lib seq_hw.c:466:(snd_seq_hw_open) open /dev/snd/seq failed: Permission denied
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1683983768855	geckodriver	INFO	Listening on 127.0.0.1:57253
+1683983769078	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ox" "--remote-debugging-port" "60529" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileY8UPiU"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+1683983778333	Marionette	INFO	Marionette enabled
+1683983778346	Marionette	INFO	Listening on port 37475
+Read port: 37475
+console.error: "Warning: unrecognized command line flag -ignore-certificate-errors\n"
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -proxy-server\n"
+console.error: "Warning: unrecognized command line flag -proxy-bypass-list\n"
+console.error: "Warning: unrecognized command line flag -start-maximized\n"
+console.error: "Warning: unrecognized command line flag -disable-dev-shm-usage\n"
+WebDriver BiDi listening on ws://127.0.0.1:60529
+Read port: 37475
+1683983780283	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:60529/devtools/browser/79dc810e-d007-429b-940e-1f3079b32a53
+JavaScript warning: https://opensea.io/_next/static/chunks/main-ae31bbd290f75bdd.js, line 1: unreachable code after return statement
+ALSA lib seq_hw.c:466:(snd_seq_hw_open) open /dev/snd/seq failed: Permission denied
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"

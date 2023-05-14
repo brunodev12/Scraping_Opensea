@@ -2692,3 +2692,27 @@ JavaScript warning: https://opensea.io/_next/static/chunks/75314-e2eb7da5a9a9d3b
 * Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
 ALSA lib seq_hw.c:466:(snd_seq_hw_open) open /dev/snd/seq failed: Permission denied
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1684091477143	geckodriver	INFO	Listening on 127.0.0.1:57429
+1684091477473	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ox" "--remote-debugging-port" "47239" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileyiMnWG"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+1684091482445	Marionette	INFO	Marionette enabled
+1684091482455	Marionette	INFO	Listening on port 40941
+Read port: 40941
+console.error: "Warning: unrecognized command line flag -ignore-certificate-errors\n"
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -proxy-server\n"
+console.error: "Warning: unrecognized command line flag -proxy-bypass-list\n"
+console.error: "Warning: unrecognized command line flag -start-maximized\n"
+console.error: "Warning: unrecognized command line flag -disable-dev-shm-usage\n"
+WebDriver BiDi listening on ws://127.0.0.1:47239
+1684091483461	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:47239/devtools/browser/246f531f-8407-4fa6-ac20-cd17d1d9f3ca
+JavaScript warning: https://opensea.io/_next/static/chunks/main-ae31bbd290f75bdd.js, line 1: unreachable code after return statement
+ALSA lib seq_hw.c:466:(snd_seq_hw_open) open /dev/snd/seq failed: Permission denied
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"

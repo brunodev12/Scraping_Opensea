@@ -6700,3 +6700,41 @@ JavaScript warning: https://opensea.io/_next/static/chunks/60025-648128075fcaf35
 JavaScript warning: https://opensea.io/_next/static/chunks/60025-648128075fcaf35a.js, line 1: Failed to create WebGL context: WebGL creation failed: 
 * WebglAllowWindowsNativeGl:false restricts context creation on this system. ()
 * Exhausted GL driver options. (FEATURE_FAILURE_WEBGL_EXHAUSTED_DRIVERS)
+1684916358019	geckodriver	INFO	Listening on 127.0.0.1:42915
+1684916358339	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... ox" "--remote-debugging-port" "36853" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileOEzEnT"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: Unable to open a connection to the X server
+1684916366606	Marionette	INFO	Marionette enabled
+1684916366622	Marionette	INFO	Listening on port 43973
+Read port: 43973
+console.error: "Warning: unrecognized command line flag -ignore-certificate-errors\n"
+console.error: "Warning: unrecognized command line flag -disable-extensions\n"
+console.error: "Warning: unrecognized command line flag -proxy-server\n"
+console.error: "Warning: unrecognized command line flag -proxy-bypass-list\n"
+console.error: "Warning: unrecognized command line flag -start-maximized\n"
+console.error: "Warning: unrecognized command line flag -disable-dev-shm-usage\n"
+Read port: 43973
+WebDriver BiDi listening on ws://127.0.0.1:36853
+1684916368022	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:36853/devtools/browser/3bc64628-23b1-47fe-a612-46c04382284b
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript error: https://opensea.io/_next/static/chunks/framework-7168c9eca23aea76.js, line 9: Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
